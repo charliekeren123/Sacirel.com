@@ -1,0 +1,136 @@
+/* Reset beberapa elemen dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body dan font */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;  /* Background abu-abu terang untuk kesan elegan */
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #e8e8e8;  /* Background abu-abu muda */
+    color: #333;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4a4a4a; /* Warna abu-abu tua untuk teks */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li a {
+    color: #4a4a4a;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff6f61; /* Warna aksen elegan pada hover */
+}
+
+/* Section Produk */
+.products {
+    padding: 60px 0;
+    background-color: #fafafa;  /* Latar belakang putih krem untuk elegansi */
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #4a4a4a;
+    font-weight: bold;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #4a4a4a;
+}
+
+.product-item p {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #555;
+}
+
+.product-item button {
+    background-color: #ff6f61; /* Warna aksen elegan */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.product-item button:hover {
+    background-color: #e45e54; /* Efek hover lebih gelap */
+}
+
+/* Form Pemesanan */
+.order-form {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.order-form h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #4a4a
